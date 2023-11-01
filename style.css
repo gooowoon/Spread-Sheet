@@ -1,0 +1,46 @@
+* {
+    background-color: rgb(188, 180, 195);
+}
+
+
+/* 버튼 스타일링 */
+#export-btn {       
+    background: #5e508a;
+    color: white;
+    border: none;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+/* block : height, width 값 지정 가능, margin, padding 지정 가능  */
+/* inline : height, width 값 지정 불가능, margin 위아래 적용 불가능,
+ padding 위아래 시각적으로 추가 되지만 공간차지는 X */
+/* inline- block : height, width 값 지정 가능 - 미지정시 컨텐츠 만큼 영역이 잡힙, 줄바꿈 X  */
+
+
+
+/* div 스타일링 */
+.cell-row {
+    display: flex;
+}
+
+.cell {
+    width: 80px;
+    border: 1px solid lightgray;
+    height: 40px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* 헤더 스타일링 */
+.cell.header {
+    text-align: center;
+    background: #ddd;
+}
+
+/* 하이라이트 스타일링 */
+.cell.header.active {
+    background: rgba(242, 242, 181, 0.723);
+    color: white;
+}
